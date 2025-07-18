@@ -64,21 +64,39 @@ section h2 {
 form input,
 form textarea {
   border: 1px solid #ccc;
-  border-radius: 5px;
-  background: #f9f9f9;
+  border-radius: 6px;
+  background: #ffffff;
   color: #222;
+  padding: 10px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #777;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #6C63FF;
+  box-shadow: 0px 0px 5px #a29bfe;
+  outline: none;
 }
 
 form button {
-  background-color: #6C63FF;
+  background: linear-gradient(45deg, #6C63FF, #5145CD);
   border: none;
   font-weight: bold;
-  transition: background-color 0.3s;
+  transition: transform 0.3s ease, background 0.3s ease;
   color: white;
+  padding: 10px;
+  border-radius: 6px;
 }
 
 form button:hover {
-  background-color: #5145CD;
+  transform: translateY(-3px);
+  background: linear-gradient(45deg, #5145CD, #6C63FF);
 }
 
 /* Footer */
@@ -96,7 +114,7 @@ footer {
 
 .dark-mode .navbar,
 .dark-mode footer {
-  background-color: #1A1A40 !important; /* Dark purple tone */
+  background-color: #1A1A40 !important;
 }
 
 .dark-mode .hero {
@@ -118,17 +136,29 @@ footer {
   color: #a29bfe;
 }
 
+/* Fixed Form Colors for Dark Mode */
 .dark-mode form input,
 .dark-mode form textarea {
-  background-color: #2a2a40;
+  background-color: #2a2a3f;
   color: #e6e6e6;
-  border: 1px solid #444;
+  border: 1px solid #555;
+}
+
+.dark-mode form input::placeholder,
+.dark-mode form textarea::placeholder {
+  color: #aaa;
+}
+
+.dark-mode form input:focus,
+.dark-mode form textarea:focus {
+  border-color: #a29bfe;
+  box-shadow: 0px 0px 5px #6C63FF;
 }
 
 .dark-mode form button {
-  background-color: #6C63FF;
+  background: linear-gradient(45deg, #6C63FF, #5145CD);
 }
 
 .dark-mode form button:hover {
-  background-color: #a29bfe;
+  background: linear-gradient(45deg, #5145CD, #6C63FF);
 }
