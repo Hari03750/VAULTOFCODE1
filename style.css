@@ -40,6 +40,8 @@ section h2 {
   color: #6C63FF;
   margin-bottom: 20px;
   font-weight: bold;
+  text-align: center;
+  background: none; /* Removes the ugly box */
 }
 
 /* Service Cards */
@@ -69,12 +71,14 @@ form textarea {
   color: #222;
   padding: 10px;
   width: 100%;
+  margin-bottom: 12px;
+  font-size: 1rem;
   transition: all 0.3s ease;
 }
 
 form input::placeholder,
 form textarea::placeholder {
-  color: #777;
+  color: #888;
 }
 
 form input:focus,
@@ -84,6 +88,7 @@ form textarea:focus {
   outline: none;
 }
 
+/* Button */
 form button {
   background: linear-gradient(45deg, #6C63FF, #5145CD);
   border: none;
@@ -92,6 +97,8 @@ form button {
   color: white;
   padding: 10px;
   border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
 }
 
 form button:hover {
@@ -112,20 +119,24 @@ footer {
   color: #e6e6e6;
 }
 
+/* Navbar & Footer */
 .dark-mode .navbar,
 .dark-mode footer {
   background-color: #1A1A40 !important;
 }
 
+/* Hero for Dark Mode */
 .dark-mode .hero {
   background: linear-gradient(to right, #2D2B55, #1A1A40);
   color: #e6e6e6;
 }
 
+/* Headings */
 .dark-mode section h2 {
   color: #a29bfe;
 }
 
+/* Service Cards in Dark Mode */
 .dark-mode .service-card {
   background-color: #1e1e2f;
   color: #e6e6e6;
@@ -136,7 +147,7 @@ footer {
   color: #a29bfe;
 }
 
-/* Fixed Form Colors for Dark Mode */
+/* Fixed Form Colors */
 .dark-mode form input,
 .dark-mode form textarea {
   background-color: #2a2a3f;
@@ -155,6 +166,7 @@ footer {
   box-shadow: 0px 0px 5px #6C63FF;
 }
 
+/* Button in Dark Mode */
 .dark-mode form button {
   background: linear-gradient(45deg, #6C63FF, #5145CD);
 }
